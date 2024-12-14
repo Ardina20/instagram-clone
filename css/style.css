@@ -1,0 +1,231 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --gray:#8a8a8a;
+    --blue:#008be5;
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.clear{
+    clear: both;
+}
+/**********************nav section**************************/
+.navbar{
+    position: fixed;
+    float: left;
+}
+nav{
+    width: 240px;
+    height: 100vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.256);
+    position: relative;
+    padding: 50px 32px;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav ul{
+    list-style: none;
+    margin-top: 14px;
+}
+nav li{
+    padding: 16px 5px;
+}
+nav img{
+    width: 24px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+nav span{
+    margin-left: 14px;
+}
+nav .fa-solid, nav .fa-regular,nav .fa-brands,nav .fa-light{
+    font-size: 22px;
+    font-weight: 600;
+}
+.menu{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    width: 160px;
+    padding: 10px;
+}
+nav li:hover ,nav .menu:hover{
+    background-color: rgba(128, 128, 128, 0.256);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/**********************right section**************************/
+.rightSection{
+    float: right;
+    width: 300px;
+    margin-top: 45px;
+    margin-right: 110px;
+}
+.rightSection img{
+    width: 40px;
+    aspect-ratio: 1/1; 
+    border-radius: 50%;
+    margin-right:10px;
+}
+.profile {
+    display: inline-block;
+    width: 170px;
+}
+.profile p{
+    color: var(--gray);
+}
+.rightSection .link{
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 600;
+}
+.rightSection p{
+    font-size: 14px;
+}
+.rightSection ul{
+    list-style: none;
+}
+.rightSection li{
+    margin: 14px 0;
+}
+.suggestions p{
+    display: inline-block;
+    width: 220px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+}
+.seeAll{
+    top:0px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+.bottomLinksDiv{
+    margin-top: 32px;
+    padding-right: 40px;
+}
+.bottomLink ,.instagramMeta{
+    text-decoration: none;
+    color:var(--gray);
+    font-size: 10px;
+}
+.bottomLink:hover{
+    text-decoration: underline;
+}
+.instagramMeta{
+    margin-top:20px;
+}
+/**************************middle Section story******************************/
+.middleSection{
+    position: absolute;
+    top: -5px;
+    left: 350px;
+    width: 630px;
+    margin-top:30px;
+}
+.stories{
+    padding: 15px;
+}
+.story{
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.storyBefore{
+    position: relative;
+}
+.storyBefore::before{
+    content: '';
+    position: absolute;
+    width: 57px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    bottom: .5px;
+    left: 1.5px;
+    background:linear-gradient(40deg, #dba600, #d300c5);
+    z-index: -1;
+}
+.storyDiv{
+    display: inline-block;
+    margin: 0 3px ;
+    cursor: pointer;
+}
+.storyDiv p{
+    font-size: 12px;
+}
+/*****************************meddle section post***************************/
+.postsParent{
+    text-align: center;
+    margin: 10px auto;
+    width: 450px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.594);
+}
+.postHead , .postIcons{
+    width: 100%;
+    text-align: start;
+    margin-bottom:10px;
+}
+.postHead img{
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.postImg{
+    width: 450px;
+    height: 470px;
+    border: 1px solid rgba(128, 128, 128, 0.404);
+    border-radius: 5px;
+}
+.verifiedIcon{
+    color: var(--blue);
+}
+.userName ,.postLeftIcons{
+    display: inline-block;
+    padding: 15px 0;
+    width: 95%;
+}
+.postIcons .fa-regular{
+    font-size: 24px;
+    cursor: pointer;
+
+}
+.postLeftIcons{
+    padding-bottom: 0;
+}
+.postLeftIcons .fa-regular{
+    margin-right: 15px;
+}
+.postIcons .fa-regular:hover {
+    opacity: .6;
+}
+.postBottom ,.views ,.Comments{
+    text-align: start;
+}
+.views , .Comments ,.postDetails{
+    color: var(--gray);
+    font-size: 14px;
+    cursor: pointer;
+}
+.views,.likes {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.Comments{
+    margin-bottom: 15px;
+}
+
